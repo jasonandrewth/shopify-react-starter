@@ -14,7 +14,7 @@ const Home: React.FC = (props) => {
 
   useEffect(() => {
     fetchAllProducts();
-  }, [fetchAllProducts, products]);
+  }, [fetchAllProducts]);
 
   if (!products) {
     return <div>Loading...</div>;

@@ -23,7 +23,7 @@ const ProductPage: React.FC = () => {
 
   useEffect(() => {
     fetchProductWithHandle(handle);
-  }, []);
+  }, [fetchProductWithHandle, handle]);
 
   if (!product.title) {
     return <div>Loading...</div>;
