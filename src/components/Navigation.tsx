@@ -8,13 +8,14 @@ import { MdMenu, MdShoppingBasket, MdWbSunny } from "react-icons/md";
 import { IoLogoReact } from "react-icons/io5";
 
 //Chakra
-import { Button, Box, Badge, Flex, Icon, useColorMode } from "@chakra-ui/react";
+import { Badge, Flex, Icon, useColorMode } from "@chakra-ui/react";
 
 const Navigation: React.FC = () => {
   const { openCart, openMenu, checkout } = useContext(ShopContext);
 
   const { colorMode, toggleColorMode } = useColorMode();
 
+  console.log(colorMode);
   return (
     <Flex
       flexDirection="row"

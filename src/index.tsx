@@ -6,10 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import ShopProvider from "./context/shopContext";
 
 // 1. import `ChakraProvider` component
-import { ColorModeScript, ChakraProvider } from "@chakra-ui/react";
-
-//2. import theme
-import theme from "./theme";
+import { ChakraProvider } from "@chakra-ui/react";
 
 ReactDOM.render(
   <React.StrictMode>
